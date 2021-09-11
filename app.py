@@ -38,5 +38,6 @@ def predict():
     return render_template('home_1.html', predict=f'person is {ans}')
 
 #app.run()
-app.run(debug=True) # this is go into live changes after a change we need not to close the server and run again this will run it automatically
+if __name__=='__main__':
+    app.run(debug=True) # this is go into live changes after a change we need not to close the server and run again this will run it automatically
 
